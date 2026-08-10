@@ -1,6 +1,7 @@
 import json
 import datetime
 import os
+import zoneinfo
 from urllib.parse import quote
 from playwright.sync_api import sync_playwright
 
@@ -64,8 +65,12 @@ def scrape_station(page, station_label, info):
     return abfahrten
 
 def main():
+    # Deutsche Zeitzone (Europe/Berlin) für korrekten Zeitstempel erzwingen
+    berlin_tz = zoneinfo.ZoneInfo("Europe/Berlin")
+    jetzt_berlin = datetime.datetime.now(berlin_tz)
+
     alle_daten = {
-        "stand": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "stand": jetzt_berlin.strftime("%Y-%m-%d %H:%M:%S"),
         "stationen": {}
     }
 

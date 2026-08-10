@@ -1,5 +1,5 @@
 {
-  "stand": "2026-08-10 19:38:57",
+  "stand": "2026-08-10 19:40:33",
   "stationen": {
     "Messehallen (U2)": [
       {
@@ -154,11 +154,6 @@
       }
     ],
     "Feldstraße (U3)": [
-      {
-        "linie": "U3",
-        "richtung": "Schlump - Barmbek",
-        "abfahrt": "19:39+0"
-      },
       {
         "linie": "U3",
         "richtung": "Wandsbek-Gartenstadt",

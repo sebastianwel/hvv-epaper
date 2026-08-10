@@ -4,13 +4,16 @@ on:
   schedule:
     # Runs every 10 minutes
     - cron: '*/10 * * * *'
-  workflow_dispatch: # Enables manual trigger button in GitHub
+  workflow_dispatch:
+
+env:
+  TZ: Europe/Berlin
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Grants write access for GitHub Actions Bot
+      contents: write
 
     steps:
     - name: Checkout Repository
@@ -24,7 +27,7 @@ jobs:
     - name: Install Dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install playwright
+        pip install playwright tzdata
         python -m playwright install chromium --with-deps
 
     - name: Run Scraper

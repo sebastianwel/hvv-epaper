@@ -1,12 +1,7 @@
 {
-  "stand": "2026-08-10 20:21:05",
+  "stand": "2026-08-10 20:25:53",
   "stationen": {
     "Messehallen (U2)": [
-      {
-        "linie": "U2",
-        "richtung": "Niendorf Nord",
-        "abfahrt": "20:23+0"
-      },
       {
         "linie": "U2",
         "richtung": "Billstedt",
@@ -151,14 +146,14 @@
         "linie": "U2",
         "richtung": "Niendorf Nord",
         "abfahrt": "22:03+0"
+      },
+      {
+        "linie": "U2",
+        "richtung": "Mümmelmannsberg",
+        "abfahrt": "22:10+0"
       }
     ],
     "Feldstraße (U3)": [
-      {
-        "linie": "U3",
-        "richtung": "Wandsbek-Gartenstadt",
-        "abfahrt": "20:23+0"
-      },
       {
         "linie": "U3",
         "richtung": "Schlump - Barmbek",
@@ -208,6 +203,11 @@
         "linie": "U3",
         "richtung": "Wandsbek-Gartenstadt",
         "abfahrt": "20:48+0"
+      },
+      {
+        "linie": "U3",
+        "richtung": "Schlump - Barmbek",
+        "abfahrt": "20:49+0"
       }
     ]
   }

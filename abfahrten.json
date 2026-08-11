@@ -1,69 +1,7 @@
 {
-  "stand": "2026-08-12 00:00:59",
+  "stand": "2026-08-12 00:59:30",
   "stationen": {
-    "Messehallen (U2)": [
-      {
-        "linie": "U2",
-        "richtung": "Niendorf Nord",
-        "abfahrt": "00:03+1"
-      },
-      {
-        "linie": "U2",
-        "richtung": "Mümmelmannsberg",
-        "abfahrt": "00:20+0"
-      },
-      {
-        "linie": "U2",
-        "richtung": "Niendorf Nord",
-        "abfahrt": "00:23+0"
-      },
-      {
-        "linie": "U2",
-        "richtung": "Niendorf Nord",
-        "abfahrt": "00:43+0"
-      }
-    ],
-    "Feldstraße (U3)": [
-      {
-        "linie": "U3",
-        "richtung": "Hauptbahnhof Süd - Barmbek",
-        "abfahrt": "00:03+1"
-      },
-      {
-        "linie": "U3",
-        "richtung": "Schlump - Barmbek",
-        "abfahrt": "00:09+2"
-      },
-      {
-        "linie": "U3",
-        "richtung": "Wandsbek-Gartenstadt",
-        "abfahrt": "00:13+0"
-      },
-      {
-        "linie": "U3",
-        "richtung": "Schlump - Barmbek",
-        "abfahrt": "00:19+0"
-      },
-      {
-        "linie": "U3",
-        "richtung": "Hauptbahnhof Süd - Barmbek",
-        "abfahrt": "00:23+0"
-      },
-      {
-        "linie": "U3",
-        "richtung": "Schlump - Barmbek",
-        "abfahrt": "00:29+0"
-      },
-      {
-        "linie": "U3",
-        "richtung": "Schlump - Barmbek",
-        "abfahrt": "00:39+0"
-      },
-      {
-        "linie": "U3",
-        "richtung": "Schlump - Barmbek",
-        "abfahrt": "00:49+0"
-      }
-    ]
+    "Messehallen (U2)": [],
+    "Feldstraße (U3)": []
   }
 }

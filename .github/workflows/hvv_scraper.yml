@@ -36,7 +36,9 @@ jobs:
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git stash
         git pull origin main --rebase
+        git stash pop || true
         git add abfahrten.json
         git diff --cached --quiet || git commit -m "Auto-update abfahrten.json"
         git push

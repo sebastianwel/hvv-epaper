@@ -1,9 +1,8 @@
-name: HVV Scraper Cronjob
+name: HVV Scraper Webhook
 
 on:
-  schedule:
-    # Runs every 10 minutes
-    - cron: '*/10 * * * *'
+  repository_dispatch:
+    types: [run-scraper]
   workflow_dispatch:
 
 env:
@@ -14,7 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v4
@@ -38,6 +36,7 @@ jobs:
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git pull origin main --rebase
         git add abfahrten.json
         git diff-index --quiet HEAD || git commit -m "Auto-update abfahrten.json"
         git push

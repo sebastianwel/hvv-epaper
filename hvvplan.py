@@ -5,7 +5,6 @@ import zoneinfo
 from urllib.parse import quote
 from playwright.sync_api import sync_playwright
 
-# Korrekte Stationsnamen laut HVV-Formular
 STATIONS = {
     "Messehallen (U2)": {
         "station": "Messehallen",
@@ -13,7 +12,7 @@ STATIONS = {
     },
     "Feldstraße (U3)": {
         "station": "U Feldstraße",
-        "stationId": "Master:11908"
+        "stationId": "Master:11017"
     }
 }
 
@@ -24,13 +23,31 @@ def scrape_station(page, station_label, info):
     print(f"\nLade Abfahrten für: {station_label}...")
     abfahrten = []
 
-    # URL mit sauberen Parametern aufbauen
     station_encoded = quote(info["station"])
     id_encoded = quote(info["stationId"])
     url = f"https://www.hvv.de/de/fahrplaene/abfahrten?station={station_encoded}&stationId={id_encoded}&Abfahrten="
 
     try:
         page.goto(url, timeout=30000)
+
+        try:
+            page.wait_for_load_state("networkidle", timeout=10000)
+        except Exception:
+            pass
+
+        # Exakte Checkboxen über ihre IDs unchecken (falls aktiv)
+        try:
+            page.locator("#busCheckbox").uncheck(force=True)
+            page.locator("#shipCheckbox").uncheck(force=True)
+            
+            # Auf den "Anzeigen"-Button klicken
+            anzeigen_btn = page.locator("button.js-get-departures")
+            if anzeigen_btn.count() > 0:
+                anzeigen_btn.click()
+                # Warten, bis die Tabelle sich aktualisiert hat
+                page.wait_for_timeout(2000)
+        except Exception as filter_err:
+            print(f"Hinweis beim Anpassen der Filter: {filter_err}")
 
         # Warten, bis die Tabelle geladen ist
         page.wait_for_selector("tbody.js-departure-table-body tr", timeout=15000)
@@ -47,7 +64,6 @@ def scrape_station(page, station_label, info):
                 richtung = cols[1].inner_text().strip()
                 abfahrt = cols[2].inner_text().replace('\n', ' ').strip()
 
-                # Nimmt z.B. aus "U3 U3 U" nur "U3"
                 linie = raw_linie.split()[0] if raw_linie else "U"
 
                 if linie.startswith("U"):
@@ -65,7 +81,6 @@ def scrape_station(page, station_label, info):
     return abfahrten
 
 def main():
-    # Deutsche Zeitzone (Europe/Berlin) für korrekten Zeitstempel erzwingen
     berlin_tz = zoneinfo.ZoneInfo("Europe/Berlin")
     jetzt_berlin = datetime.datetime.now(berlin_tz)
 
@@ -84,7 +99,6 @@ def main():
 
         browser.close()
 
-    # JSON speichern
     with open(JSON_PATH, "w", encoding="utf-8") as f:
         json.dump(alle_daten, f, ensure_ascii=False, indent=2)
 

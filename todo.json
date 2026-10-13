@@ -1,0 +1,6 @@
+{
+  "tasks": [
+    {"text": "ESP32 Software flashen", "done": true},
+    {"text": "Vercel Web-App testen", "done": false}
+  ]
+}

@@ -1,15 +1,11 @@
 {
   "tasks": [
     {
-      "text": "Koffer packen",
+      "text": "Vercel Web-App anbinden",
       "done": false
     },
     {
-      "text": "Chilli kochen",
-      "done": false
-    },
-    {
-      "text": "Zum Sport gehen",
+      "text": "Gehäuse im 3D-Drucker starten",
       "done": false
     }
   ]

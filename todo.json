@@ -1,6 +1,10 @@
 {
   "tasks": [
     {
+      "text": "Friseurtermin machen",
+      "done": false
+    },
+    {
       "text": "Einkaufen gehen",
       "done": false
     }

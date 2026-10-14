@@ -1,12 +1,3 @@
 {
-  "tasks": [
-    {
-      "text": "ESP32 Software finalisieren",
-      "done": true
-    },
-    {
-      "text": "Gehäuse im 3D-Drucker starten",
-      "done": false
-    }
-  ]
+  "tasks": []
 }

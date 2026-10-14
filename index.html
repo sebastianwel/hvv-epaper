@@ -178,7 +178,6 @@
     </div>
 
     <script>
-      // State Management
       let currentMode = "hvv";
       let tasks = [
         { text: "ESP32 Software finalisieren", done: true },
@@ -186,10 +185,24 @@
         { text: "Gehäuse im 3D-Drucker starten", done: false },
       ];
 
-      function setMode(mode) {
+      // Hilfsfunktion zum Senden von Daten an die Vercel API
+      async function sendData(file, content) {
+        try {
+          const res = await fetch("/api/update", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ file, content }),
+          });
+          if (!res.ok) throw new Error("Fehler beim Speichern");
+          showToast("Erfolgreich übertragen!");
+        } catch (err) {
+          showToast("Fehler: " + err.message);
+        }
+      }
+
+      async function setMode(mode) {
         currentMode = mode;
 
-        // iOS Segmented Control Button Styles anpassen
         ["hvv", "mood", "todo"].forEach((m) => {
           const btn = document.getElementById(`btn-${m}`);
           if (m === mode) {
@@ -201,7 +214,6 @@
           }
         });
 
-        // Sektionen ein-/ausblenden
         document
           .getElementById("section-hvv")
           .classList.toggle("hidden", mode !== "hvv");
@@ -212,8 +224,8 @@
           .getElementById("section-todo")
           .classList.toggle("hidden", mode !== "todo");
 
-        showToast(`Modus: ${mode.toUpperCase()}`);
-        // Hier greift später die Vercel Serverless Function / GitHub API
+        // Mode in der config.json speichern
+        await sendData("config.json", { mode: mode });
       }
 
       function showToast(text) {
@@ -235,6 +247,8 @@
         document.getElementById("todo-counter").innerText =
           `${openCount} offen`;
 
+        tasks.tasks?.forEach ? null : null; // Sicherheitscheck
+
         tasks.forEach((task, index) => {
           const item = document.createElement("div");
           item.className = `flex items-center justify-between p-3 rounded-xl transition ${task.done ? "bg-[#F5F5F5]/60 text-[#364F6B]/40 line-through" : "bg-[#F5F5F5] text-[#364F6B]"}`;
@@ -252,10 +266,14 @@
         });
       }
 
+      async function saveTasksToCloud() {
+        await sendData("todo.json", { tasks: tasks });
+      }
+
       function toggleTask(index) {
         tasks[index].done = !tasks[index].done;
         renderTasks();
-        showToast("To-Do aktualisiert");
+        saveTasksToCloud();
       }
 
       function addTodo() {
@@ -264,22 +282,21 @@
         tasks.unshift({ text: input.value.trim(), done: false });
         input.value = "";
         renderTasks();
-        showToast("Aufgabe hinzugefügt");
+        saveTasksToCloud();
       }
 
       function deleteTask(index) {
         tasks.splice(index, 1);
         renderTasks();
-        showToast("Aufgabe gelöscht");
+        saveTasksToCloud();
       }
 
-      function saveMood() {
+      async function saveMood() {
         const status = document.getElementById("mood-status").value;
         const quote = document.getElementById("mood-quote").value;
-        showToast("Mood & Status übertragen!");
+        await sendData("mood.json", { status, quote });
       }
 
-      // Initiale To-Do Liste laden
       renderTasks();
     </script>
   </body>

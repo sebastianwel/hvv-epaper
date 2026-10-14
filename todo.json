@@ -1,6 +1,10 @@
 {
   "tasks": [
     {
+      "text": "Zum Sport gehen",
+      "done": false
+    },
+    {
       "text": "In Urlaub fahren",
       "done": false
     },

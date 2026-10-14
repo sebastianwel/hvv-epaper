@@ -1,6 +1,10 @@
 {
   "tasks": [
     {
+      "text": "Koffer packen",
+      "done": false
+    },
+    {
       "text": "Chilli kochen",
       "done": false
     }

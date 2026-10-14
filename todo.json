@@ -1,6 +1,12 @@
 {
   "tasks": [
-    {"text": "ESP32 Software flashen", "done": true},
-    {"text": "Vercel Web-App testen", "done": false}
+    {
+      "text": "ESP32 Software finalisieren",
+      "done": true
+    },
+    {
+      "text": "Gehäuse im 3D-Drucker starten",
+      "done": false
+    }
   ]
 }

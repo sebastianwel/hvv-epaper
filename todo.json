@@ -1,10 +1,6 @@
 {
   "tasks": [
     {
-      "text": "test",
-      "done": false
-    },
-    {
       "text": "Koffer packen",
       "done": false
     },

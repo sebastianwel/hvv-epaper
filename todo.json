@@ -1,16 +1,8 @@
 {
   "tasks": [
     {
-      "text": "Koffer packen",
-      "done": true
-    },
-    {
-      "text": "Chilli kochen",
-      "done": true
-    },
-    {
-      "text": "Kaifu und Sauna",
-      "done": true
+      "text": "Shoppen",
+      "done": false
     }
   ]
 }

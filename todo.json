@@ -1,6 +1,10 @@
 {
   "tasks": [
     {
+      "text": "STADION!!",
+      "done": false
+    },
+    {
       "text": "Bad streichen",
       "done": false
     },

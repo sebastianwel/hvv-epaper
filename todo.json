@@ -1,6 +1,10 @@
 {
   "tasks": [
     {
+      "text": "Bad streichen",
+      "done": false
+    },
+    {
       "text": "Farbe kaufen",
       "done": false
     },

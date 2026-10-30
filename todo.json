@@ -1,12 +1,8 @@
 {
   "tasks": [
     {
-      "text": "In Urlaub fahren!",
-      "done": true
-    },
-    {
       "text": "Koffer packen",
-      "done": false
+      "done": true
     },
     {
       "text": "Chilli kochen",

@@ -1,308 +1,308 @@
 {
-  "stand": "2026-11-04 10:01:21",
+  "stand": "2026-11-04 13:01:18",
   "stationen": {
     "Messehallen (U2)": [
       {
         "linie": "U2",
-        "richtung": "Mümmelmannsberg",
-        "abfahrt": "10:00+1"
+        "richtung": "Niendorf Markt",
+        "abfahrt": "12:58+5"
       },
       {
         "linie": "U2",
         "richtung": "Niendorf Nord",
-        "abfahrt": "10:03+0"
+        "abfahrt": "13:03+2"
       },
       {
         "linie": "U2",
         "richtung": "Billstedt",
-        "abfahrt": "10:05+0"
+        "abfahrt": "13:05+0"
       },
       {
         "linie": "U2",
         "richtung": "Niendorf Markt",
-        "abfahrt": "10:08+0"
+        "abfahrt": "13:08+0"
       },
       {
         "linie": "U2",
         "richtung": "Mümmelmannsberg",
-        "abfahrt": "10:10+0"
+        "abfahrt": "13:10+0"
       },
       {
         "linie": "U2",
         "richtung": "Niendorf Nord",
-        "abfahrt": "10:13+0"
+        "abfahrt": "13:13+0"
       },
       {
         "linie": "U2",
         "richtung": "Billstedt",
-        "abfahrt": "10:15+0"
+        "abfahrt": "13:15+0"
       },
       {
         "linie": "U2",
         "richtung": "Niendorf Markt",
-        "abfahrt": "10:18+0"
+        "abfahrt": "13:18+0"
       },
       {
         "linie": "U2",
         "richtung": "Mümmelmannsberg",
-        "abfahrt": "10:20+0"
+        "abfahrt": "13:20+0"
       },
       {
         "linie": "U2",
         "richtung": "Niendorf Nord",
-        "abfahrt": "10:23+0"
+        "abfahrt": "13:23+0"
       },
       {
         "linie": "U2",
         "richtung": "Billstedt",
-        "abfahrt": "10:25+0"
+        "abfahrt": "13:25+0"
       },
       {
         "linie": "U2",
         "richtung": "Niendorf Markt",
-        "abfahrt": "10:28+0"
+        "abfahrt": "13:28+0"
       },
       {
         "linie": "U2",
         "richtung": "Mümmelmannsberg",
-        "abfahrt": "10:30+0"
+        "abfahrt": "13:30+0"
       },
       {
         "linie": "U2",
         "richtung": "Niendorf Nord",
-        "abfahrt": "10:33+0"
+        "abfahrt": "13:33+0"
       },
       {
         "linie": "U2",
         "richtung": "Billstedt",
-        "abfahrt": "10:35+0"
+        "abfahrt": "13:35+0"
       },
       {
         "linie": "U2",
         "richtung": "Niendorf Markt",
-        "abfahrt": "10:38+0"
+        "abfahrt": "13:38+0"
       },
       {
         "linie": "U2",
         "richtung": "Mümmelmannsberg",
-        "abfahrt": "10:40+0"
+        "abfahrt": "13:40+0"
       },
       {
         "linie": "U2",
         "richtung": "Niendorf Nord",
-        "abfahrt": "10:43+0"
+        "abfahrt": "13:43+0"
       },
       {
         "linie": "U2",
         "richtung": "Billstedt",
-        "abfahrt": "10:45+0"
+        "abfahrt": "13:45+0"
       },
       {
         "linie": "U2",
         "richtung": "Niendorf Markt",
-        "abfahrt": "10:48+0"
+        "abfahrt": "13:48+0"
       },
       {
         "linie": "U2",
         "richtung": "Mümmelmannsberg",
-        "abfahrt": "10:50+0"
+        "abfahrt": "13:50+0"
       },
       {
         "linie": "U2",
         "richtung": "Niendorf Nord",
-        "abfahrt": "10:53+0"
+        "abfahrt": "13:53+0"
       },
       {
         "linie": "U2",
         "richtung": "Billstedt",
-        "abfahrt": "10:55+0"
+        "abfahrt": "13:55+0"
       },
       {
         "linie": "U2",
         "richtung": "Niendorf Markt",
-        "abfahrt": "10:58+0"
+        "abfahrt": "13:58+0"
       },
       {
         "linie": "U2",
         "richtung": "Mümmelmannsberg",
-        "abfahrt": "11:00+0"
+        "abfahrt": "14:00+0"
       },
       {
         "linie": "U2",
         "richtung": "Niendorf Nord",
-        "abfahrt": "11:03+0"
+        "abfahrt": "14:03+0"
       },
       {
         "linie": "U2",
         "richtung": "Billstedt",
-        "abfahrt": "11:05+0"
+        "abfahrt": "14:05+0"
       },
       {
         "linie": "U2",
         "richtung": "Niendorf Markt",
-        "abfahrt": "11:08+0"
+        "abfahrt": "14:08+0"
       },
       {
         "linie": "U2",
         "richtung": "Mümmelmannsberg",
-        "abfahrt": "11:10+0"
+        "abfahrt": "14:10+0"
       },
       {
         "linie": "U2",
         "richtung": "Niendorf Nord",
-        "abfahrt": "11:13+0"
+        "abfahrt": "14:13+0"
       }
     ],
     "Feldstraße (U3)": [
       {
         "linie": "U3",
         "richtung": "Berliner Tor",
-        "abfahrt": "10:03+0"
+        "abfahrt": "13:03+0"
       },
       {
         "linie": "U3",
         "richtung": "Schlump - Barmbek",
-        "abfahrt": "10:04+0"
+        "abfahrt": "13:04+0"
       },
       {
         "linie": "U3",
         "richtung": "Berliner Tor",
-        "abfahrt": "10:08+0"
+        "abfahrt": "13:08+0"
       },
       {
         "linie": "U3",
         "richtung": "Schlump - Barmbek",
-        "abfahrt": "10:09+0"
+        "abfahrt": "13:09+0"
       },
       {
         "linie": "U3",
         "richtung": "Berliner Tor",
-        "abfahrt": "10:13+1"
+        "abfahrt": "13:13+0"
       },
       {
         "linie": "U3",
         "richtung": "Schlump - Barmbek",
-        "abfahrt": "10:14+0"
+        "abfahrt": "13:14+0"
       },
       {
         "linie": "U3",
         "richtung": "Berliner Tor",
-        "abfahrt": "10:18+0"
+        "abfahrt": "13:18+0"
       },
       {
         "linie": "U3",
         "richtung": "Schlump - Barmbek",
-        "abfahrt": "10:19+0"
+        "abfahrt": "13:19+0"
       },
       {
         "linie": "U3",
         "richtung": "Berliner Tor",
-        "abfahrt": "10:23+0"
+        "abfahrt": "13:23+0"
       },
       {
         "linie": "U3",
         "richtung": "Schlump - Barmbek",
-        "abfahrt": "10:24+0"
+        "abfahrt": "13:24+0"
       },
       {
         "linie": "U3",
         "richtung": "Berliner Tor",
-        "abfahrt": "10:28+0"
+        "abfahrt": "13:28+0"
       },
       {
         "linie": "U3",
         "richtung": "Schlump - Barmbek",
-        "abfahrt": "10:29+0"
+        "abfahrt": "13:29+0"
       },
       {
         "linie": "U3",
         "richtung": "Berliner Tor",
-        "abfahrt": "10:33+0"
+        "abfahrt": "13:33+0"
       },
       {
         "linie": "U3",
         "richtung": "Schlump - Barmbek",
-        "abfahrt": "10:34+0"
+        "abfahrt": "13:34+0"
       },
       {
         "linie": "U3",
         "richtung": "Berliner Tor",
-        "abfahrt": "10:38+0"
+        "abfahrt": "13:38+0"
       },
       {
         "linie": "U3",
         "richtung": "Schlump - Barmbek",
-        "abfahrt": "10:39+0"
+        "abfahrt": "13:39+0"
       },
       {
         "linie": "U3",
         "richtung": "Berliner Tor",
-        "abfahrt": "10:43+0"
+        "abfahrt": "13:43+0"
       },
       {
         "linie": "U3",
         "richtung": "Schlump - Barmbek",
-        "abfahrt": "10:44+0"
+        "abfahrt": "13:44+0"
       },
       {
         "linie": "U3",
         "richtung": "Berliner Tor",
-        "abfahrt": "10:48+0"
+        "abfahrt": "13:48+0"
       },
       {
         "linie": "U3",
         "richtung": "Schlump - Barmbek",
-        "abfahrt": "10:49+0"
+        "abfahrt": "13:49+0"
       },
       {
         "linie": "U3",
         "richtung": "Berliner Tor",
-        "abfahrt": "10:53+0"
+        "abfahrt": "13:53+0"
       },
       {
         "linie": "U3",
         "richtung": "Schlump - Barmbek",
-        "abfahrt": "10:54+0"
+        "abfahrt": "13:54+0"
       },
       {
         "linie": "U3",
         "richtung": "Berliner Tor",
-        "abfahrt": "10:58+0"
+        "abfahrt": "13:58+0"
       },
       {
         "linie": "U3",
         "richtung": "Schlump - Barmbek",
-        "abfahrt": "10:59+0"
+        "abfahrt": "13:59+0"
       },
       {
         "linie": "U3",
         "richtung": "Berliner Tor",
-        "abfahrt": "11:03+0"
+        "abfahrt": "14:03+0"
       },
       {
         "linie": "U3",
         "richtung": "Schlump - Barmbek",
-        "abfahrt": "11:04+0"
+        "abfahrt": "14:04+0"
       },
       {
         "linie": "U3",
         "richtung": "Berliner Tor",
-        "abfahrt": "11:08+0"
+        "abfahrt": "14:08+0"
       },
       {
         "linie": "U3",
         "richtung": "Schlump - Barmbek",
-        "abfahrt": "11:09+0"
+        "abfahrt": "14:09+0"
       },
       {
         "linie": "U3",
         "richtung": "Berliner Tor",
-        "abfahrt": "11:13+0"
+        "abfahrt": "14:13+0"
       },
       {
         "linie": "U3",
         "richtung": "Schlump - Barmbek",
-        "abfahrt": "11:14+0"
+        "abfahrt": "14:14+0"
       }
     ]
   }
